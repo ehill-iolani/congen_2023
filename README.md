@@ -16,9 +16,9 @@ docker pull ethill/decona_plus:mod
 
 Choose one depending on your group:
 ```
-docker run --name=arth_analysis --volume=/workspaces/codespaces-blank/arth:/home/data -it ethill/decona_plus:mod
-docker run --name=deca_analysis --volume=/workspaces/codespaces-blank/deca:/home/data -it ethill/decona_plus:mod
-docker run --name=fish_analysis --volume=/workspaces/codespaces-blank/fish:/home/data -it ethill/decona_plus:mod
+docker run --name=arth_analysis --volume=/workspaces/congen_2023/arth:/home/data -it ethill/decona_plus:mod
+docker run --name=deca_analysis --volume=/workspaces/congen_2023/deca:/home/data -it ethill/decona_plus:mod
+docker run --name=fish_analysis --volume=/workspaces/congen_2023/fish:/home/data -it ethill/decona_plus:mod
 ```
 
 Navigate to the data relevant to your group:
