@@ -26,7 +26,17 @@ Navigate to the data:
 cd /home/data/
 ```
 
-Begin the analysis:
+Check to see if your files the barcode0x directories have the .gz ending. 
+```
+ls barcode*/
+```
+
+If they do you will need to run the following code:
+```
+gunzip barcode*/*.gz
+```
+
+Once everything is uncompressed you can begin the analysis:
 ```
 # Arth
 decona_remote_pro -f -l 170 -m 500 -q 10 -c 0.95 -n 5 -k 10 -T 4
