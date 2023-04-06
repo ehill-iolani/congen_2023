@@ -21,10 +21,8 @@ docker run --name=deca_analysis --volume=/workspaces/congen_2023/deca:/home/data
 docker run --name=fish_analysis --volume=/workspaces/congen_2023/fish:/home/data -it ethill/decona_plus:mod
 ```
 
-Navigate to the data relevant to your group:
+Navigate to the data:
 ```
-cd /home/data/
-cd /home/data/
 cd /home/data/
 ```
 
@@ -32,6 +30,10 @@ Begin the analysis:
 ```
 # Arth
 decona -f -l 170 -m 230 -q 10 -c 0.95 -n 5 -k 10 -T 4
+mkdir remote_blast
+cp results/Racon/*concatenated.fasta remote_blast
+cd remote_blast
+decona_remote_blast -g yes
 
 # Fish
 decona_pro -f -l 170 -m 230 -q 10 -c 0.95 -n 5 -k 10 -T 4 -B mifish_streamdb.fasta
