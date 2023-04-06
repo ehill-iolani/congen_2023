@@ -29,11 +29,11 @@ cd /home/data/
 Begin the analysis:
 ```
 # Arth
-decona_remote_pro -f -l 170 -m 230 -q 10 -c 0.95 -n 5 -k 10 -T 4
+decona_remote_pro -f -l 170 -m 500 -q 10 -c 0.95 -n 5 -k 10 -T 4
 
 # Fish
 decona_pro -f -l 170 -m 230 -q 10 -c 0.95 -n 5 -k 10 -T 4 -B mifish_streamdb.fasta
 
 # Shrimp
-decona_pro -f -l 170 -m 500 -q 10 -c 0.95 -n 5 -k 10 -T 4 -B shrimp_db.fasta
+decona_pro -f -l 170 -m 230 -q 10 -c 0.95 -n 5 -k 10 -T 4 -B shrimp_db.fasta
 ```
