@@ -23,9 +23,9 @@ docker run --name=fish_analysis --volume=/workspaces/congen_2023/fish:/home/data
 
 Navigate to the data relevant to your group:
 ```
-cd /home/data/arth
-cd /home/data/deca
-cd /home/data/fish
+cd /home/data/
+cd /home/data/
+cd /home/data/
 ```
 
 Begin the analysis:
