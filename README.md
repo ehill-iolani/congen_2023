@@ -16,7 +16,6 @@ docker pull ethill/decona_plus:mod
 
 Choose one depending on your group:
 ```
-docker run --name=arth_analysis --volume=/workspaces/congen_2023_eDNA/arth:/home/data -it ethill/decona_plus:mod
 docker run --name=deca_analysis --volume=/workspaces/congen_2023_eDNA/deca:/home/data -it ethill/decona_plus:mod
 docker run --name=fish_analysis --volume=/workspaces/congen_2023_eDNA/fish:/home/data -it ethill/decona_plus:mod
 ```
@@ -26,21 +25,8 @@ Navigate to the data:
 cd /home/data/
 ```
 
-Check to see if your files the barcode0x directories have the .gz ending. 
+Now you can begin the analysis:
 ```
-ls barcode*/
-```
-
-If they do you will need to run the following code:
-```
-gunzip barcode*/*.gz
-```
-
-Once everything is uncompressed you can begin the analysis:
-```
-# Arth
-decona_remote_pro -f -l 170 -m 500 -q 10 -c 0.95 -n 5 -k 10 -T 4
-
 # Fish
 decona_pro -f -l 170 -m 230 -q 10 -c 0.95 -n 5 -k 10 -T 4 -B mifish_streamdb.fasta
 
